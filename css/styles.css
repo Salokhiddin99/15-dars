@@ -110,7 +110,7 @@ header {
     margin-bottom: 24px;
 }
 .card_subtitle {
-    width: 255px;
+    width: 245px;
     font-size: 16px;
     line-height: 26px;
     color: #333D4B;
@@ -187,5 +187,69 @@ header {
     margin-left: 120px;
 }
 .how_it_works {
-
+    margin-left: 120px;
+    width: 1040px;
+    margin-top: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero_works {
+    display: flex;
+    flex-direction: column;
+}
+.number {
+    width: 150px;
+    color: #FDD6BA;
+    margin-bottom: 38px;
+}
+.works_title {
+    width: 255px;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+    margin-bottom: 42px;
+}
+.works_subtitle {
+    width: 285px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+.link_heading {
+    margin-top: 70px;
+    margin-bottom: 200px;
+}
+/* //!footer */
+footer {
+    width: 1280px;
+    height: 120px;
+    background-color: #293039;
+    
+}
+.footer_heading {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site__footer_title {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__nav_link {
+    color: #83888F;
+}
+.footer__nav_link:hover {
+    color: #FEFCF7;
+}
+.brand_icon {
+    color: #FEFCF7;
+    font-size: 25px;
+    margin-right: 24px;
+}
+.brand_icon:hover {
+    color: #FDD6BA;
 }
