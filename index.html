@@ -9,48 +9,62 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="/css/main.js">
     <title>Coffeeroastres</title>
 </head>
 <body>
     <header class="container_hero">
         <a href="./index.html" class="logo__link"><img src="./img/logo_black.png" alt="logo" height="26px" width="236px" class="site_logo"></a>
+        <button class="site-header__toggle" type="button"></button>
         <nav class="site_nav">
             <a href="#" class="site_nav__link">home</a>
             <a href="#" class="site_nav__link">about us</a>
             <a href="#" class="site_nav__link">create you plan</a>
         </nav>
     </header>
-    <section class="hero_coffe container_hero">
-        <div class="container_heading basic">
-            <h2 class="basic_title">Great coffee made simple.</h2>
-            <p class="basic_subtitle">Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
-            <a href="#" class="basic_link">Create your plan</a>
-        </div>
-    </section>
-    <section class="collection container_heading">
-        <div class="collection_cards">
-            <div class="collection__card">
-                <img src="./img/green.png" alt="img" width="255px" height="193px" class="collection__card_img">
-                <h2 class="basic_title card_title">Gran Espresso</h2>
-                <p class="basic_subtitle card_subtitle">Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+    <div class="container_hero">
+        <section class="hero_coffe">
+            <div class="container_heading basic">
+                <h2 class="basic_title">Great coffee made simple.</h2>
+                <p class="basic_subtitle">Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
+                <a href="#" class="basic_link">Create your plan</a>
             </div>
-            <div class="collection__card">
-                <img src="./img/planalto.png" alt="img" width="255px" height="193px" class="collection__card_img">
-                <h2 class="basic_title card_title">Planalto</h2>
-                <p class="basic_subtitle card_subtitle">Brazilian dark roast with rich and velvety body, and hints of fruits and nuts</p>
+        </section>
+    </div>
+    <div class="container_heading">
+        <section class="collection">
+            <div class="collection_cards">
+                <div class="collection__card">
+                    <img src="./img/green.png" alt="img" width="255px" height="193px" class="collection__card_img">
+                    <div class="collection_card_text">
+                        <h2 class="basic_title card_title">Gran Espresso</h2>
+                        <p class="basic_subtitle card_subtitle">Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+                    </div>
+                </div>
+                <div class="collection__card">
+                    <img src="./img/planalto.png" alt="img" width="255px" height="193px" class="collection__card_img">
+                    <div class="collection_card_text">
+                        <h2 class="basic_title card_title">Planalto</h2>
+                        <p class="basic_subtitle card_subtitle">Brazilian dark roast with rich and velvety body, and hints of fruits and nuts</p>
+                    </div>
+                </div>
+                <div class="collection__card">
+                    <img src="./img/picollo.png" alt="img" width="255px" height="193px" class="collection__card_img">
+                    <div class="collection_card_text">
+                        <h2 class="basic_title card_title">Piccollo</h2>
+                        <p class="basic_subtitle card_subtitle">Mild and smooth blend featuring notes of toasted almond and dried cherry</p>
+                    </div>
+                </div>
+                <div class="collection__card">
+                    <img src="./img/danche.png" alt="img" width="255px" height="193px" class="collection__card_img">
+                    <div class="collection_card_text">
+                        <h2 class="basic_title card_title">Danche</h2>
+                        <p class="basic_subtitle card_subtitle">Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
+                    </div>
+                </div>
             </div>
-            <div class="collection__card">
-                <img src="./img/picollo.png" alt="img" width="255px" height="193px" class="collection__card_img">
-                <h2 class="basic_title card_title">Piccollo</h2>
-                <p class="basic_subtitle card_subtitle">Mild and smooth blend featuring notes of toasted almond and dried cherry</p>
-            </div>
-            <div class="collection__card">
-                <img src="./img/danche.png" alt="img" width="255px" height="193px" class="collection__card_img">
-                <h2 class="basic_title card_title">Danche</h2>
-                <p class="basic_subtitle card_subtitle">Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <section class="why_choose_us container_hero">
         <div class="heading_subject">
             <h2 class="basic_title heading_title">Why choose us?</h2>
@@ -62,21 +76,27 @@
     <article class="sales container_heading">
         <div class="collection__card sales__card">
             <img src="./img/coffee-bean.png" alt="img" width="71px" height="72px" class="collection__card__img">
-            <h2 class="basic_title card_title sales__card__title">Best quality</h2>
-            <p class="basic_subtitle card_subtitle sales__card__subtitle">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+            <div class="collection_card_text card_text">
+                <h2 class="basic_title card_title sales__card__title">Best quality</h2>
+                <p class="basic_subtitle card_subtitle sales__card__subtitle">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+            </div>
         </div>
         <div class="collection__card sales__card">
             <img src="./img/Combined.png" alt="img" width="71px" height="72px" class="collection__card__img">
-            <h2 class="basic_title card_title sales__card__title">Exclusive benefits</h2>
-            <p class="basic_subtitle card_subtitle sales__card__subtitle">Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+            <div class="collection_card_text card_text">
+                <h2 class="basic_title card_title sales__card__title">Exclusive benefits</h2>
+                <p class="basic_subtitle card_subtitle sales__card__subtitle">Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+            </div>
         </div>
         <div class="collection__card sales__card">
             <img src="./img/Combined-Shape.png" alt="img" width="71px" height="72px" class="collection__card__img">
-            <h2 class="basic_title card_title sales__card__title">Free shipping</h2>
-            <p class="basic_subtitle card_subtitle sales__card__subtitle">We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+            <div class="collection_card_text card_text">
+                <h2 class="basic_title card_title sales__card__title">Free shipping</h2>
+                <p class="basic_subtitle card_subtitle sales__card__subtitle">We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+            </div>
         </div>
     </article>
-    <section class="">
+    <!-- <section class="">
     <h3 class="work container_heading">How it works</h3>
     <div class="line container_heading">
         <img src="./img/aylana.png" alt="img">
@@ -121,6 +141,6 @@
                 <i class="fa-brands fa-instagram brand_icon"></i>
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
