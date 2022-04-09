@@ -71,21 +71,6 @@ header {
     color: #333D4B;
 }
 
-.site-header__toggle {
-    display: block;
-    border: 0;
-    background-color: transparent;
-    width: 16px;
-    height: 16px;
-    background-image: url('../img/icon-hamburger.svg.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.site-header--open .site-header__toggle {
-    background-image: url('../img/icon-close.svg.svg');
-}
-
 /* //!main styles */
 .hero_coffe {
     width: 100%;
@@ -462,17 +447,11 @@ footer {
         background-size: cover;
         background-repeat: no-repeat;
     }
-    .fa-bars {
-        display: block;
-        font-size: 20px;
-        color: #333D4B;
-    }
-    .fa-xmark {
-        font-size: 20px;
-        color: #333D4B;
-    }
     .site_nav {
         display: none;
+    }
+    .fa-bars {
+        display: block;
     }
     .basic {
         display: flex;
@@ -613,4 +592,28 @@ footer {
     i:nth-child(3) {
         margin-right: 0;
     }
+}
+input {
+	visibility: hidden;
+}
+.fa-xmark-large {
+	display: none;
+}
+.modal {
+	background-color: yellow;
+	width: 400px;
+	height: 400px;
+	transform: translateX(-600px);
+	box-shadow: 0 0 5px 1px #111;
+	transition: all 2s ease-in-out;
+	padding: 10px;
+}
+input:checked ~ .fa-bars {
+	display: none;
+}
+input:checked ~ .fa-xmark-large {
+	display: inline;
+}
+input:checked ~ .modal {
+	transform: translateX(0);
 }
