@@ -70,6 +70,15 @@ header {
 .site_nav__link:hover {
     color: #333D4B;
 }
+label {
+    display: none;
+}
+.modal {
+    display: none;
+}
+.fa-bars {
+    display: none;
+}
 
 /* //!main styles */
 .hero_coffe {
@@ -596,24 +605,25 @@ footer {
 input {
 	visibility: hidden;
 }
-.fa-xmark-large {
+.fa-xmark {
 	display: none;
 }
 .modal {
-	background-color: yellow;
+	background-color: rgba(0, 0, 0, 0.092);
 	width: 400px;
 	height: 400px;
-	transform: translateX(-600px);
-	box-shadow: 0 0 5px 1px #111;
+	transform: translateY(-600px);
+	box-shadow: 0 0 5px 1px rgb(38, 33, 33);
 	transition: all 2s ease-in-out;
 	padding: 10px;
 }
 input:checked ~ .fa-bars {
 	display: none;
 }
-input:checked ~ .fa-xmark-large {
+input:checked ~ .fa-xmark {
 	display: inline;
 }
 input:checked ~ .modal {
-	transform: translateX(0);
+	transform: translateY(0);
 }
+
