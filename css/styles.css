@@ -70,9 +70,6 @@ header {
 .site_nav__link:hover {
     color: #333D4B;
 }
-label {
-    display: none;
-}
 .modal {
     display: none;
 }
@@ -460,7 +457,7 @@ footer {
         display: none;
     }
     .fa-bars {
-        display: block;
+        display:inline-block;
     }
     .basic {
         display: flex;
@@ -602,6 +599,9 @@ footer {
         margin-right: 0;
     }
 }
+.drop_site_nav {
+    display: inline-block;
+}
 input {
 	visibility: hidden;
 }
@@ -609,9 +609,10 @@ input {
 	display: none;
 }
 .modal {
-	background-color: rgba(0, 0, 0, 0.092);
-	width: 400px;
-	height: 400px;
+    display: inline-block;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 200px;
+	height: 200px;
 	transform: translateY(-600px);
 	box-shadow: 0 0 5px 1px rgb(38, 33, 33);
 	transition: all 2s ease-in-out;
