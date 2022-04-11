@@ -599,9 +599,23 @@ footer {
         margin-right: 0;
     }
 }
-.drop_site_nav {
-    display: inline-block;
+.drop-sitenav > .site_nav__link {
+    color: #fff;
+    margin-top: 10px;
 }
+.drop-sitenav > .site_nav__link:hover {
+    color: #0E8784;
+}
+
+.drop-sitenav {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
 input {
 	visibility: hidden;
 }
@@ -609,10 +623,12 @@ input {
 	display: none;
 }
 .modal {
+    position: absolute;
+    left: 0;
     display: inline-block;
-	background-color: rgba(0, 0, 0, 0.5);
-	width: 200px;
-	height: 200px;
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100vw;
+	height: 80vh;
 	transform: translateY(-600px);
 	box-shadow: 0 0 5px 1px rgb(38, 33, 33);
 	transition: all 2s ease-in-out;
@@ -625,6 +641,9 @@ input:checked ~ .fa-xmark {
 	display: inline;
 }
 input:checked ~ .modal {
+    position: fixed;
+    left: 0;
+    z-index: 99;
 	transform: translateY(0);
 }
 
